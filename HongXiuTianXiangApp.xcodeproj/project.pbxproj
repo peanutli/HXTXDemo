@@ -34,6 +34,8 @@
 		6E0189AD1C848C11008E57E3 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0189A91C848C11008E57E3 /* search@2x.png */; };
 		6E0189AE1C848C11008E57E3 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0189AA1C848C11008E57E3 /* search@3x.png */; };
 		6E0189B11C8520D9008E57E3 /* HXTXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0189B01C8520D9008E57E3 /* HXTXTabBarController.m */; };
+		6E0189B51C855EB5008E57E3 /* BookShelfCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0189B41C855EB5008E57E3 /* BookShelfCell.m */; };
+		6E0189B91C856774008E57E3 /* BookShelfItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0189B81C856774008E57E3 /* BookShelfItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,10 @@
 		6E0189AA1C848C11008E57E3 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
 		6E0189AF1C8520D9008E57E3 /* HXTXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTXTabBarController.h; sourceTree = "<group>"; };
 		6E0189B01C8520D9008E57E3 /* HXTXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTXTabBarController.m; sourceTree = "<group>"; };
+		6E0189B31C855EB5008E57E3 /* BookShelfCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCell.h; sourceTree = "<group>"; };
+		6E0189B41C855EB5008E57E3 /* BookShelfCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCell.m; sourceTree = "<group>"; };
+		6E0189B71C856774008E57E3 /* BookShelfItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfItem.h; sourceTree = "<group>"; };
+		6E0189B81C856774008E57E3 /* BookShelfItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 		6E0189691C84701D008E57E3 /* HongXiuTianXiangApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E0189B61C856755008E57E3 /* Model */,
+				6E0189B21C855E66008E57E3 /* views */,
 				6E01898E1C84832C008E57E3 /* images */,
 				6E0189811C847A70008E57E3 /* viewControllers */,
 				6E01896D1C84701D008E57E3 /* AppDelegate.h */,
@@ -166,6 +174,24 @@
 				6E0189AA1C848C11008E57E3 /* search@3x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		6E0189B21C855E66008E57E3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6E0189B31C855EB5008E57E3 /* BookShelfCell.h */,
+				6E0189B41C855EB5008E57E3 /* BookShelfCell.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		6E0189B61C856755008E57E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E0189B71C856774008E57E3 /* BookShelfItem.h */,
+				6E0189B81C856774008E57E3 /* BookShelfItem.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0189B91C856774008E57E3 /* BookShelfItem.m in Sources */,
 				6E01898A1C847B2B008E57E3 /* BookshelfViewController.m in Sources */,
 				6E0189721C84701D008E57E3 /* ViewController.m in Sources */,
+				6E0189B51C855EB5008E57E3 /* BookShelfCell.m in Sources */,
 				6E01896F1C84701D008E57E3 /* AppDelegate.m in Sources */,
 				6E01896C1C84701D008E57E3 /* main.m in Sources */,
 				6E0189871C847AF8008E57E3 /* SearchBookViewController.m in Sources */,
@@ -410,6 +438,7 @@
 				6E0189801C84701D008E57E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
